@@ -92,8 +92,10 @@ else
 fi
 
 log "###########################################################################"
+if [ ${UPDATEMODS} -eq 1 ]; then
 log "Installing Mods ..."
 arkmanager installmods
+fi
 
 log "###########################################################################"
 log "Launching ark server ..."

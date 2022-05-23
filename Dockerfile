@@ -1,5 +1,5 @@
-# https://github.com/r15ch13/arkcluster-base
-FROM r15ch13/arkcluster-base:latest
+# https://github.com/phusion/baseimage-docker
+FROM phusion/baseimage:latest-amd64
 
 LABEL org.label-schema.maintainer="Richard Kuhnt <r15ch13+git@gmail.com>" \
       org.label-schema.description="ARK Cluster Image" \
@@ -11,6 +11,7 @@ LABEL org.label-schema.maintainer="Richard Kuhnt <r15ch13+git@gmail.com>" \
 ENV CRON_AUTO_UPDATE="0 */3 * * *" \
     CRON_AUTO_BACKUP="0 */1 * * *" \
     UPDATEONSTART=1 \
+    UPDATEMODS=1 \
     BACKUPONSTART=1 \
     BACKUPONSTOP=1 \
     WARNONSTOP=1 \
@@ -26,6 +27,7 @@ ENV CRON_AUTO_UPDATE="0 */3 * * *" \
     GAME_PORT=7778 \
     QUERY_PORT=27015 \
     RAW_SOCKETS="False" \
+    SERVER_PVE="False" \
     SERVER_PASSWORD="" \
     ADMIN_PASSWORD="" \
     SPECTATOR_PASSWORD="" \
