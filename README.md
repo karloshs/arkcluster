@@ -45,6 +45,7 @@ services:
       GAME_PORT: 7777
       QUERY_PORT: 27015
       SERVER_PASSWORD: ""
+      SERVER_PVE: "false"
       ADMIN_PASSWORD: "keepmesecret"
       SPECTATOR_PASSWORD: "keepmesecret"
       MODS: "731604991"
@@ -83,6 +84,7 @@ services:
       GAME_PORT: 7779
       QUERY_PORT: 27016
       SERVER_PASSWORD: ""
+      SERVER_PVE: "false"
       ADMIN_PASSWORD: "keepmesecret"
       SPECTATOR_PASSWORD: "keepmesecret"
       MODS: "731604991"
